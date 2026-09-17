@@ -6,9 +6,9 @@ public class LatihanDay16 {
         System.out.print("Masukkan jam saat ini (0-23): ");
         int jam = input.nextInt();
         System.out.print("Berapa jam lagi dimulai?: ");
-        int jamMulai = input.nextInt();
+        int BerapaJamLagi = input.nextInt();
         
-        int acaraMulai = jam % 24 + jamMulai;
+        int acaraMulai = (jam + BerapaJamLagi) % 24;
         System.out.println("Acara akan dimulai pada jam: " + acaraMulai);
     }
     
