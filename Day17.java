@@ -1,6 +1,6 @@
 public class Day17 {
     public static void main(String[] args){
-        //PENUGASAN = , =+ , =- , =* , =/, =%
+        //PENUGASAN = , += , -= , *= , /=, %=
         double a = 32.6 ;
         a += 1;
         System.out.println(a);
