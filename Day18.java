@@ -5,12 +5,9 @@ public class Day18 {
         System.out.println(b);
         
         int c = 389;
-        byte d = (byte)c; //kalau ini namanya konversi paksa
+        byte d = (byte) + c; //kalau ini namanya konversi paksa
         System.out.println(d);
         
-        /* int e = 389
-        byte f = e; //nah kalau ini eror karna nilai tipe data int ga muat ke tipe data byte
-        System.out.println(f);
         
     }
 }
