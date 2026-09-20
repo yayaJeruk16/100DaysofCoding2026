@@ -11,7 +11,7 @@ public class Scanner19 {
         double potonganHarga = harga*(diskon/100);
         double hargaSetelahDiskon = harga-potonganHarga;
         
-        int hargaAkhir = (int) + hargaSetelahDiskon;
+        int hargaAkhir = (int)hargaSetelahDiskon;
         
         System.out.println("\nHarga awal\t: " + harga);
         System.out.println("Harga setelah diskon\t: " + hargaSetelahDiskon);
