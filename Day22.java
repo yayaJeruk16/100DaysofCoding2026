@@ -7,15 +7,12 @@ public class Day22 {
         System.out.println("KodeBarang: " + kode);
         System.out.println("stokBarang: " + stok);
         
-        String kode2 = kode + "10";
-        int stok2 = stok + 10;
-        
-        int kode3 = Integer.parseInt(kode2);
-        String stok3 = String.valueOf(stok2);
+        int kode2 = Integer.parseInt(kode);
+        String stok2 = String.valueOf(stok);
         
         System.out.println("\n=== SETELAH DITUKAR ===");
-        System.out.println("kodeBarang: " + stok3);
-        System.out.println("stokBarang: " + kode3);
+        System.out.println("kodeBarang: " + stok2 + 10);
+        System.out.println("stokBarang: " + (kode2 + 10));
     }
     
 }
