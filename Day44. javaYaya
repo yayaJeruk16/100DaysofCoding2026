@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class day44 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("=== SISTEM EVALUASI DIKLAT ===");
+        System.out.print("Masukkan Nama Peserta      : ");
+        String nama = in.nextLine();
+        System.out.print("Masukkan Kode Jalur (R/P) : ");
+        char kode = in.next().charAt(0);
+        System.out.print("Masukkan Nilai Akhir(0-100): ");
+        int nilai = in.nextInt();
+
+        String a = "";
+        String b = "";
+
+        if(kode == 'R'){
+            if(nilai > 90){
+                a = "Reguler";
+                b = "Sangat Memuaskan";
+            }else if(nilai >= 80){
+                a = "Regular";
+                b = "Memuaskan";
+            }else if(nilai < 80 && nilai > 0){
+                a = "Reguler";
+                b = "Belum Lulus";
+            }
+        }
+        else if(kode == 'P'){
+            if(nilai > 90){
+                a = "Profesional";
+                b = "Cumlaude";
+            }else if(nilai >= 85){
+                a = "Profesional";
+                b = "Sangat Baik";
+            }else if(nilai < 85 && nilai > 0){
+                a = "Profesional";
+                b = "Baik";
+            }
+        }
+        System.out.printf("""
+            -------------------
+            HASIL EVALUASI PESERTA
+            -------------------
+            Nama Peserta : %s
+            Jenis Jalur : %s
+            Nilai AKhir : %d
+            Predikat     : %s
+            """ , nama, a, nilai, b);
+        
+
+        
+    }
+}
