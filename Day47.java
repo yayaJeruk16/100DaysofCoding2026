@@ -6,7 +6,7 @@ public class day47 {
         String hari = d.next();
 
         switch (hari.toLowerCase()) {
-            case "senin" , "selasa" , "rabu", "khamis", "jumat":
+            case "senin" , "selasa" , "rabu", "kamis", "jumat":
                 System.out.println("Hari kuliah");
                 break;
             case "sabtu" , "minggu" :
