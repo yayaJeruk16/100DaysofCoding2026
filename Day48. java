@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class day48 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a  = in.nextInt();
+        char operator = in.next().charAt(0);
+        int b  = in.nextInt();
+        int hasil = 0;
+
+        switch (operator) {
+            case '+':
+                hasil = a + b;
+                System.out.println(hasil);
+                break;
+            case '-':
+                hasil = a - b;
+                System.out.println(hasil);
+                break;
+            case '*':
+                hasil = a * b;
+                System.out.println(hasil);
+                break;
+            case '/':
+                hasil = a/b;
+                System.out.println(hasil);
+                break;
+            case '%':
+                hasil = a % b;
+                System.out.println(hasil);
+                break;
+            default:
+                System.out.println("ngawur");
+                
+            
+
+        }
+        
+    }
+}
