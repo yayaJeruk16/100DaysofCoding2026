@@ -9,8 +9,11 @@ public class day64 {
         int f = 1;
 
         for (int i = 1; i <= n; i++){
+            System.out.print(i + " ");
             f *= i;
         }
-        System.out.println(f);
+        System.out.println();
+        System.out.println("jumlah = " + f);
     }
 }
+
