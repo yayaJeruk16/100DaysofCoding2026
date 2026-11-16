@@ -1,9 +1,19 @@
-public class day76 {
-    public static void main(String[] args) {
-        String y = " Yaya suka main ml ";
 
-        System.out.println(y.substring(5,15));
-        System.out.println(y.replace("ml", "roblok" ));
-        System.out.println(y.trim());
+import java.util.Scanner;
+
+public class hihi {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        String n = in.nextLine();
+
+        if(n.isEmpty()){
+            System.out.println("Nama tidak boleh kosong!");
+        }else{
+            System.out.println("Halo, " + n + "!");
+        }
+
+    
+
     }
 }
